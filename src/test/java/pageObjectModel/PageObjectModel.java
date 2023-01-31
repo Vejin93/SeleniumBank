@@ -9,7 +9,7 @@ public class PageObjectModel {
 
     public WebDriver driver;
 
-    PageObjectModel(WebDriver driver)
+    public PageObjectModel(WebDriver driver)
     {
         this.driver = driver;
         PageFactory.initElements(driver,this);
@@ -40,7 +40,7 @@ public class PageObjectModel {
         buttonLogin.click();
     }
 
-    public boolean checkLoginPresents()
+    public boolean checkSiteNamePresent()
     {
         boolean status = siteName.isDisplayed();
         return status;
